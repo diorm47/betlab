@@ -1,0 +1,124 @@
+nav {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  height: 60px;
+  border-bottom: 1px solid rgb(240, 242, 244);
+}
+
+.nav_wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.nav_left {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+.nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+
+.nav_menu p {
+  color: rgb(37, 46, 53);
+  font-family: Akrobat600;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.nav_right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav_actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 15px;
+  border-left: 1px solid rgb(234, 236, 240);
+  border-right: 1px solid rgb(234, 236, 240);
+  height: 100%;
+}
+
+.nav_action_item {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(241, 243, 250);
+  border-radius: 50%;
+}
+
+.nav_lang_item_selected {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.nav_lang_item_selected p {
+  color: rgb(0, 0, 0);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.nav_balance {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 0 15px;
+}
+.nav_balance p {
+  color: rgb(124, 141, 181);
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.nav_balance div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.nav_balance span {
+  color: rgb(54, 120, 72);
+  font-family: Akrobat700;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.nav_user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  cursor: pointer;
+  height: 100%;
+  border-left: 1px solid rgb(234, 236, 240);
+  border-right: 1px solid rgb(234, 236, 240);
+  margin-right: 30px;
+}

@@ -1,0 +1,183 @@
+.charts_list {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.chart_card {
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 236, 240);
+  border-radius: 10px;
+
+  background: rgb(255, 255, 255);
+}
+
+.chart_card_title_filters {
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 236, 240);
+  border-radius: 10px 10px 0px 0px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgb(241, 241, 241);
+}
+.chart_card_title_filter {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+.chart_card_title_filter p {
+  color: rgb(37, 46, 53);
+  font-family: Akrobat600;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: left;
+}
+
+.chart_card_commands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgb(234, 236, 240);
+}
+
+.chart_card_command {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chart_card_command span {
+  color: rgb(124, 141, 181);
+  font-family: Akrobat;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.chart_card_command p {
+  color: rgb(37, 46, 53);
+  font-family: Akrobat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.chart_card_command_right p,
+.chart_card_command_right span {
+  text-align: right;
+}
+
+.chart_card_command_right div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* charts */
+
+.apexcharts-legend {
+  padding: 6px 20px 12px !important;
+  border-bottom: 1px solid rgb(234, 236, 240);
+  align-items: center;
+  gap: 25px;
+  top: 0 !important;
+}
+.apexcharts-legend-series {
+  margin: 0 !important;
+  gap: 8px;
+}
+
+.apexcharts-legend-text {
+  color: rgb(37, 46, 53) !important;
+  font-family: Akrobat !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.apexcharts-xaxis-tick,
+.apexcharts-xaxis,
+.apexcharts-yaxis {
+  display: none;
+}
+#rightChart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.apexcharts-ycrosshairs {
+  stroke: rgb(234, 236, 240) !important;
+}
+
+.apexcharts-legend-marker {
+  width: 75px !important;
+  border-radius: 4px !important;
+  overflow: hidden;
+  height: 26px !important;
+}
+
+.vertical_dates {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  top: 74px;
+  left: 20px;
+}
+.vertical_dates p {
+  color: rgb(37, 46, 53);
+  font-family: Akrobat700;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.right_chart {
+  position: relative;
+}
+
+.gorizontal_dates {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  left: 50px;
+  padding-right: 60px;
+  width: 100%;
+  bottom: 17px;
+}
+.gorizontal_dates p {
+  color: rgb(37, 46, 53);
+  font-family: Akrobat;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.chart_card_title_filter input {
+  cursor: pointer;width: 14px;
+  height: 14px;
+}

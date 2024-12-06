@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страница матча | BetLab</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
+  <body>
+    <div class="main_wrapper">
+      <!-- sidebar -->
+
+      <div class="sidebar">
+        <div class="sidebar_wrapper">
+          <div class="sidebar_menu_btn">
+            <img src="./assets/icons/burger-menu-sidebar.svg" alt="" />
+          </div>
+          <div class="sidebar_line"></div>
+          <div class="sidebar_menu_list">
+            <a href="#"
+              ><img src="./assets/icons/sidebar-icons/1.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/sidebar-icons/2.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/sidebar-icons/3.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/sidebar-icons/4.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/sidebar-icons/5.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/sidebar-icons/6.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/sidebar-icons/7.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/sidebar-icons/8.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/sidebar-icons/9.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/sidebar-icons/10.svg" alt=""
+            /></a>
+          </div>
+          <div class="sidebar_line"></div>
+
+          <div class="sidebar_menu_list">
+            <a href="#"
+              ><img src="./assets/icons/sidebar-icons/11.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/sidebar-icons/12.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/sidebar-icons/13.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="page_content">
+        <!-- nav bar -->
+        <nav>
+          <div class="nav_wrapper">
+            <div class="nav_left">
+              <a href="./index.html">
+                <img src="./assets/logo.svg" alt="" />
+              </a>
+              <div class="nav_menu">
+                <a href="#"><p>Главная</p></a>
+                <a href="#"><p>Live</p></a>
+                <a href="#"><p>Рейтинг</p></a>
+                <a href="#"><p>Мои боты</p></a>
+                <a href="#"><p>Ретроанализ</p></a>
+                <a href="#"><p>Тарифы</p></a>
+              </div>
+            </div>
+            <div class="nav_right">
+              <div class="nav_actions">
+                <div class="nav_action_item">
+                  <img src="./assets/icons/news-icon.svg" alt="" />
+                </div>
+                <div class="nav_action_item">
+                  <img src="./assets/icons/notification-icon.svg" alt="" />
+                </div>
+                <div class="nav_lang_toggler">
+                  <div class="nav_lang_item_selected">
+                    <img src="./assets/icons/england-flag.svg" alt="" />
+                    <p>En</p>
+                    <img src="./assets/icons/arrow-down.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="nav_balance">
+                <div>
+                  <p>Мой баланс:</p>
+                  <span>$ 00.00</span>
+                </div>
+                <img src="./assets/icons/arrow-down.svg" alt="" />
+              </div>
+              <div class="nav_user">
+                <img src="./assets/icons/avatar.png" alt="" />
+              </div>
+
+              <button class="main_btn">Пополнить баланс</button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- content -->
+        <div class="content">
+          <div class="match_table">
+            <div class="match_table_top">
+              <img src="./assets/icons/star.svg" alt="" />
+              <p>Английская Премьер-лига, 14:30 суббота, 21 октября 2023 г.</p>
+            </div>
+            <div class="match_table_content">
+              <div class="match_table_content_block">
+                <div class="match_weathers">
+                  <div>
+                    <img src="./assets/icons/weather-1.svg" alt="" />
+                    <p>32℃</p>
+                  </div>
+                  <div>
+                    <img src="./assets/icons/weather-2.svg" alt="" />
+                    <p>4.0 м/с</p>
+                  </div>
+                  <div>
+                    <img src="./assets/icons/weather-3.svg" alt="" />
+                    <p>61%</p>
+                  </div>
+                </div>
+                <div class="match_table_content_commands">
+                  <div class="match_table_command">
+                    <div class="match_table_command_logo">
+                      <img src="./assets/images/command-1.svg" alt="" />
+                    </div>
+                    <h2>Маунт Дрюитт Рейнджерс</h2>
+                    <h4>Последние 5 матчей</h4>
+                    <img src="./assets/icons/arrow.svg" alt="" />
+                    <div class="command_btns">
+                      <button class="command_btn command_btn_h">
+                        <img src="./assets/icons/h.svg" alt="" />
+                      </button>
+                      <button class="command_btn command_btn_b">
+                        <img src="./assets/icons/b.svg" alt="" />
+                      </button>
+                      <button class="command_btn command_btn_p">
+                        <img src="./assets/icons/p.svg" alt="" />
+                      </button>
+                      <button class="command_btn command_btn_b">
+                        <img src="./assets/icons/b.svg" alt="" />
+                      </button>
+                      <button class="command_btn command_btn_b">
+                        <img src="./assets/icons/b.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="match_results">
+                    <div class="match_results_top">
+                      <h3>2</h3>
+                      <div class="match_results_top_time">
+                        <div class="match_results_top_time_minutes">
+                          <img src="./assets/icons/time.svg" alt="" />
+                          <h5>84’</h5>
+                        </div>
+                        <p>2-й тайм</p>
+                        <div class="match_results_top_time_btm">
+                          <span>1 тайм: (1:1)</span>
+                        </div>
+                      </div>
+                      <h3>1</h3>
+                    </div>
+                    <div class="match_results_btm">
+                      <div class="match_results_btm_item">
+                        <p>П1</p>
+                        <div>
+                          <img src="./assets/icons/down.svg" alt="" /><span
+                            >1.15</span
+                          >
+                        </div>
+                      </div>
+                      <div class="match_results_btm_item">
+                        <p>X</p>
+                        <div>
+                          <img src="./assets/icons/down.svg" alt="" /><span
+                            >8.25</span
+                          >
+                        </div>
+                      </div>
+                      <div class="match_results_btm_item">
+                        <p>П2</p>
+                        <div>
+                          <img src="./assets/icons/up.svg" alt="" /><span
+                            >12.47</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="match_table_command">
+                    <div class="match_table_command_logo">
+                      <img src="./assets/images/command-2.svg" alt="" />
+                    </div>
+                    <h2>Маунт Дрюитт Рейнджерс</h2>
+                    <h4>Последние 5 матчей</h4>
+                    <img src="./assets/icons/arrow.svg" alt="" />
+                    <div class="command_btns">
+                      <button class="command_btn command_btn_h">
+                        <img src="./assets/icons/h.svg" alt="" />
+                      </button>
+                      <button class="command_btn command_btn_b">
+                        <img src="./assets/icons/b.svg" alt="" />
+                      </button>
+                      <button class="command_btn command_btn_p">
+                        <img src="./assets/icons/p.svg" alt="" />
+                      </button>
+                      <button class="command_btn command_btn_b">
+                        <img src="./assets/icons/b.svg" alt="" />
+                      </button>
+                      <button class="command_btn command_btn_b">
+                        <img src="./assets/icons/b.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="match_results_list">
+                  <div class="match_results_list_item">
+                    <div>
+                      <img src="./assets/icons/grey-flag.svg" alt="" />
+                      <p>6 (4)</p>
+                    </div>
+                    <div>
+                      <img src="./assets/icons/yellow-cards.svg" alt="" />
+                      <p>0 (3)</p>
+                    </div>
+                    <div>
+                      <img src="./assets/icons/red-cards.svg" alt="" />
+                      <p>0 (3)</p>
+                    </div>
+                  </div>
+                  <img src="./assets/icons/live.svg" alt="" />
+
+                  <div class="match_results_list_item">
+                    <div>
+                      <img src="./assets/icons/grey-flag.svg" alt="" />
+                      <p>6 (4)</p>
+                    </div>
+                    <div>
+                      <img src="./assets/icons/yellow-cards.svg" alt="" />
+                      <p>0 (3)</p>
+                    </div>
+                    <div>
+                      <img src="./assets/icons/red-cards.svg" alt="" />
+                      <p>0 (3)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="match_table_btns">
+                <button class="match_table_btn match_table_btn_active">
+                  Статистика
+                </button>
+                <button class="match_table_btn">Коэффициенты</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab_contents">
+            <div class="charts_list hidden">
+              <div class="chart_card">
+                <div class="chart_card_title_filters">
+                  <div class="chart_card_title_filter">
+                    <p><strong>Матч</strong></p>
+                    <input type="radio" name="" id="" />
+                  </div>
+                  <div class="chart_card_title_filter">
+                    <p>1-й тайм</p>
+                    <input type="radio" name="" id="" />
+                  </div>
+                  <div class="chart_card_title_filter">
+                    <p>2-й тайм</p>
+                    <input type="radio" name="" id="" />
+                  </div>
+                </div>
+                <div class="chart_card_commands">
+                  <div class="chart_card_command">
+                    <img src="./assets/icons/command.svg" alt="" />
+                    <div>
+                      <span>Англия</span>
+                      <p>Ливерпуль</p>
+                    </div>
+                  </div>
+                  <div class="chart_card_command chart_card_command_right">
+                    <div>
+                      <span>Англия</span>
+                      <p>Ливерпуль</p>
+                    </div>
+                    <img src="./assets/icons/command.svg" alt="" />
+                  </div>
+                </div>
+                <div class="left_card_chart">
+                  <div class="left_card_chart_item">
+                    <div class="left_card_chart_item_title">
+                      <p>Владение мячом</p>
+                    </div>
+                    <div class="left_card_chart_item_wrapper">
+                      <p>49%</p>
+                      <div class="left_card_chart_item_line">
+                        <div
+                          class="left_card_chart_line_value"
+                          style="width: 46%"
+                        ></div>
+                      </div>
+                      <p>49%</p>
+                    </div>
+                  </div>
+                  <div class="left_card_chart_item">
+                    <div class="left_card_chart_item_title">
+                      <p>Атаки</p>
+                    </div>
+                    <div class="left_card_chart_item_wrapper">
+                      <p>49%</p>
+                      <div class="left_card_chart_item_line">
+                        <div
+                          class="left_card_chart_line_value"
+                          style="width: 77%"
+                        ></div>
+                      </div>
+                      <p>49%</p>
+                    </div>
+                  </div>
+                  <div class="left_card_chart_item">
+                    <div class="left_card_chart_item_title">
+                      <p>Опасные атаки</p>
+                    </div>
+                    <div class="left_card_chart_item_wrapper">
+                      <p>49%</p>
+                      <div class="left_card_chart_item_line">
+                        <div
+                          class="left_card_chart_line_value"
+                          style="width: 39%"
+                        ></div>
+                      </div>
+                      <p>49%</p>
+                    </div>
+                  </div>
+                  <div class="left_card_chart_item">
+                    <div class="left_card_chart_item_title">
+                      <p>Всего ударов</p>
+                    </div>
+                    <div class="left_card_chart_item_wrapper">
+                      <p>49%</p>
+                      <div class="left_card_chart_item_line">
+                        <div
+                          class="left_card_chart_line_value"
+                          style="width: 34%"
+                        ></div>
+                      </div>
+                      <p>49%</p>
+                    </div>
+                  </div>
+                  <div class="left_card_chart_item">
+                    <div class="left_card_chart_item_title">
+                      <p>Удары в створ</p>
+                    </div>
+                    <div class="left_card_chart_item_wrapper">
+                      <p>49%</p>
+                      <div class="left_card_chart_item_line">
+                        <div
+                          class="left_card_chart_line_value"
+                          style="width: 56%"
+                        ></div>
+                      </div>
+                      <p>49%</p>
+                    </div>
+                  </div>
+                  <div class="left_card_chart_item">
+                    <div class="left_card_chart_item_title">
+                      <p>Удары в сторону ворот</p>
+                    </div>
+                    <div class="left_card_chart_item_wrapper">
+                      <p>49%</p>
+                      <div class="left_card_chart_item_line">
+                        <div
+                          class="left_card_chart_line_value"
+                          style="width: 67%"
+                        ></div>
+                      </div>
+                      <p>49%</p>
+                    </div>
+                  </div>
+                  <div class="left_card_chart_item">
+                    <div class="left_card_chart_item_title">
+                      <p>Угловые</p>
+                    </div>
+                    <div class="left_card_chart_item_wrapper">
+                      <p>49%</p>
+                      <div class="left_card_chart_item_line">
+                        <div
+                          class="left_card_chart_line_value"
+                          style="width: 23%"
+                        ></div>
+                      </div>
+                      <p>49%</p>
+                    </div>
+                  </div>
+                  <div class="left_card_chart_item">
+                    <div class="left_card_chart_item_title">
+                      <p>Желтые карточки</p>
+                    </div>
+                    <div class="left_card_chart_item_wrapper">
+                      <p>49%</p>
+                      <div class="left_card_chart_item_line">
+                        <div
+                          class="left_card_chart_line_value"
+                          style="width: 23%"
+                        ></div>
+                      </div>
+                      <p>49%</p>
+                    </div>
+                  </div>
+                  <div class="left_card_chart_item">
+                    <div class="left_card_chart_item_title">
+                      <p>Красные карточки</p>
+                    </div>
+                    <div class="left_card_chart_item_wrapper">
+                      <p>49%</p>
+                      <div class="left_card_chart_item_line">
+                        <div
+                          class="left_card_chart_line_value"
+                          style="width: 66%"
+                        ></div>
+                      </div>
+                      <p>49%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="chart_card">
+                <div class="chart_card_title_filters">
+                  <div class="chart_card_title_filter">
+                    <p>Атаки</p>
+                    <input type="radio" name="" id="" />
+                  </div>
+                  <div class="chart_card_title_filter">
+                    <p>Опасные атаки</p>
+                    <input type="radio" name="" id="" />
+                  </div>
+                </div>
+                <div class="right_chart">
+                  <div id="rightChart"></div>
+                  <div class="vertical_dates">
+                    <p>90</p>
+                    <p>80</p>
+                    <p>70</p>
+                    <p>60</p>
+                    <p>50</p>
+                    <p>40</p>
+                    <p>30</p>
+                    <p>20</p>
+                    <p>10</p>
+                    <p>0</p>
+                  </div>
+                  <div class="gorizontal_dates">
+                    <p>90’</p>
+                    <p>85’</p>
+                    <p>80’</p>
+                    <p>75’</p>
+                    <p>70’</p>
+                    <p>65’</p>
+                    <p>60’</p>
+                    <p>55’</p>
+                    <p>50’</p>
+                    <p>45’</p>
+                    <p>40’</p>
+                    <p>35’</p>
+                    <p>30’</p>
+                    <p>25’</p>
+                    <p>20’</p>
+                    <p>15’</p>
+                    <p>10’</p>
+                    <p>5’</p>
+                    <p>0’</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/charts.js"></script>
+  </body>
+</html>

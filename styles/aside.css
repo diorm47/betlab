@@ -1,0 +1,88 @@
+.sidebar {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  width: 62px;
+  left: 0;
+  top: 0;
+  padding: 16px;
+  background: rgb(30, 30, 30);
+}
+
+.sidebar_menu_btn {
+  box-sizing: border-box;
+  border: 1px solid rgb(84, 84, 84);
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.sidebar_line {
+  box-sizing: border-box;
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 5px;
+
+  width: 100%;
+}
+
+.sidebar_menu_list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px 0;
+}
+
+.left_card_chart {
+  padding: 20px;
+}
+
+.left_card_chart_item_title p {
+  color: rgb(37, 46, 53);
+  font-family: Akrobat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.left_card_chart_item_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.left_card_chart_item_wrapper p {
+  color: rgb(37, 46, 53);
+  font-family: Akrobat700;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  width: 5%;
+}
+
+.left_card_chart_item_line {
+  border-radius: 10px;
+  height: 10px;
+  background: rgb(255, 184, 12);
+  width: 90%;
+}
+
+.left_card_chart_line_value {
+  border-radius: 10px 0px 0px 10px;
+  height: 100%;
+  background: rgb(66, 79, 199);
+}
+
+.left_card_chart_item {
+  margin-bottom: 4px;
+}
