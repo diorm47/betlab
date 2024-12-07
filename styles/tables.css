@@ -1,0 +1,184 @@
+.tables_filters {
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 236, 240);
+  border-radius: 5px;
+  height: 50px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.cazino_input {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  height: 100%;
+  justify-content: center;
+  border-right: 1px solid rgb(234, 236, 240);
+  padding: 0 22px 0 20px;
+  cursor: pointer;
+}
+
+.tables_filters_list {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.tables_filters_list_btn {
+  height: 100%;
+  padding: 0 15px;
+  background: transparent;
+  color: rgb(117, 123, 129);
+  font-family: Akrobat;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 2%;
+  text-align: center;
+}
+
+.tables_filters_list_btn_active {
+  /* 321 */
+  color: rgb(37, 46, 53);
+  background: linear-gradient(
+    135deg,
+    rgb(254, 224, 70) 0%,
+    rgb(251, 196, 0) 100%
+  );
+}
+
+.table_items_list {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  margin-top: 14px;
+}
+.table_list_item_title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 236, 240);
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  background: rgb(255, 254, 248);
+  margin-bottom: 10px;
+}
+
+.table_list_item_title p {
+  color: rgb(37, 46, 53);
+  font-family: Akrobat600;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 2%;
+  text-align: center;
+}
+
+.table_list_item_content {
+  width: 100%;
+}
+.table_list_item_content_titles {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.table_list_item_content_title {
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 236, 240);
+  background: rgb(241, 241, 241);
+  width: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.table_list_item_content_title p {
+  color: rgb(117, 123, 129);
+  font-family: Akrobat600;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 2%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.table_list_item_data_list {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+.table_list_item_data_list_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 71px;
+  height: 100%;
+}
+
+.table_list_item_data_list_item p {
+  font-family: Akrobat600;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2%;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(37, 46, 53);
+}
+
+.data_down p {
+  color: rgb(182, 76, 76);
+}
+.data_up p {
+  color: rgb(54, 120, 72);
+}
+
+.table_list_item_datas {
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 236, 240);
+  border-radius: 0px 0px 5px 5px;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  border-top: none;
+}
+
+.table_list_item_data_list_colored {
+  background: rgb(249, 250, 252);
+}
+
+.table_items_list {
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 30px;
+  scroll-behavior: smooth;
+}
+
+.table_items_list::-webkit-scrollbar {
+  width: 0px; /* Ширина вертикальной прокрутки */
+  height: 8px; /* Высота горизонтальной прокрутки */
+}
+
+
+
+.table_list_item_active .table_list_item_title {
+  background: linear-gradient(135deg, rgb(254, 224, 70), rgb(251, 196, 0) 100%);
+}
+
+.table_list_item_active .table_list_item_title p {
+  color: rgb(37, 46, 53);
+}
+
+
+.table_items_list * {
+  user-select: none;
+}
