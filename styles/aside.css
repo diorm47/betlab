@@ -86,3 +86,10 @@
 .left_card_chart_item {
   margin-bottom: 4px;
 }
+
+
+@media only screen and (max-width: 720px) {
+  .sidebar {
+    display: none;
+  }
+}

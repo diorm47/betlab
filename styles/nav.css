@@ -122,3 +122,56 @@ nav {
   border-right: 1px solid rgb(234, 236, 240);
   margin-right: 30px;
 }
+
+.mob_nav_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.mob_nav_right_items {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mob_nav_right_items .nav_action_item {
+  width: 40px;
+  height: 40px;
+}
+.nav_mob_user_balance {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav_mob_user_balance p {
+  color: rgb(37, 46, 53);
+  font-family: Akrobat700;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 2%;
+  text-align: left;
+  text-transform: capitalize;
+}
+.mob_menu_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 1190px) {
+  .nav_wrapper .nav_menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .nav_right {
+    display: none;
+  }
+  nav {
+    height: 70px;
+  }
+  .nav_wrapper {
+    padding: 0 20px;
+  }
+}

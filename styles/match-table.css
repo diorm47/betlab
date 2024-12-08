@@ -1,6 +1,13 @@
 .match_table {
   width: 100%;
   margin-bottom: 20px;
+  border-radius: 10px;
+  background: linear-gradient(
+    134.42deg,
+    rgb(2, 25, 33) 0.736%,
+    rgba(2, 25, 33, 0.92) 50.885%,
+    rgb(2, 25, 33) 100%
+  );
 }
 
 .match_table_top {
@@ -26,7 +33,6 @@
 .match_table_content {
   padding-top: 40px;
   border-radius: 0px 0px 10px 10px;
-  background: #162a31;
 }
 
 .match_table_content_block {
@@ -297,6 +303,142 @@
 }
 
 .match_table_btn_active {
-  color: rgb(255, 184, 12);
+  color: rgb(255, 184, 12) !important;
   border-bottom: 2px solid rgb(255, 184, 12);
+}
+.mob_results_score {
+  display: none;
+}
+.match_results_top_time_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 720px) {
+  .match_table_top {
+    border-radius: 0;
+    background: transparent;
+  }
+  .match_table_top p,
+  .match_table_top img {
+    opacity: 0.5;
+  }
+  .match_table_top p {
+    font-family: Akrobat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  .match_weathers {
+    gap: 12px;
+  }
+  .match_results_btm {
+    display: none;
+  }
+  .match_table_command_logo {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .match_table_command_logo img {
+    width: 55px;
+    margin: 0;
+  }
+  .match_table_command h2 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 2px;
+    letter-spacing: 0%;
+  }
+  .match_table_command h4 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin: 0;
+  }
+  .match_results_top {
+    border: none;
+    margin: 0;
+  }
+  .match_results_top h3 {
+    display: none;
+  }
+  .match_results_top_time_btm {
+    border: none;
+  }
+  .match_results_top_time_block {
+    border-radius: 5px;
+    width: 59px;
+    height: 37px;
+    background: rgb(13, 30, 36);
+  }
+  .match_results_top_time_block p {
+    color: #fff;
+    margin: 0;
+  }
+  .match_results_top_time_minutes {
+    margin: 0;
+  }
+  .match_results_top_time_minutes h5 {
+    color: #fff;
+  }
+  .mob_results_score {
+    display: flex;
+  }
+  .mob_results_score p {
+    color: rgb(255, 255, 255);
+    font-family: Akrobat700;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 2%;
+    text-align: center;
+    margin: 0;
+  }
+  .match_results_top {
+    height: auto;
+  }
+  .match_results_top_time_minutes svg * {
+    fill: #fff;
+  }
+  .match_results_list_item {
+    gap: 6px;
+  }
+  .match_table_content_block {
+    padding-bottom: 0;
+  }
+  .match_results_list {
+    background: transparent;
+  }
+  .match_table_btns {
+    border: none;
+    background: rgb(255, 255, 255);
+    justify-content: start;
+    padding-left: 15px;
+
+    gap: 20px;
+  }
+  .match_table_btn {
+    color: rgb(117, 123, 129);
+  }
+  .match_results_list {
+    margin-top: 30px;
+    height: 36px;
+    background: rgb(11, 41, 52);
+    border: none;
+    border-radius: 0;
+  }
+  .match_table {
+    border-radius: 0;
+  }
+
+  .match_results_list_stats {
+    margin-top: -60px;
+  }
 }

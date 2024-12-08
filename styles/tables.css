@@ -52,7 +52,19 @@
   align-items: start;
   gap: 16px;
   margin-top: 14px;
+
+  position: relative;
 }
+
+.table_list_item_fixed {
+  position: sticky;
+  left: 0;
+  top: 0;
+  padding-right: 16px;
+  background: rgb(250, 250, 250);
+  margin-right: -16px;
+}
+
 .table_list_item_title {
   width: 100%;
   display: flex;
@@ -65,6 +77,9 @@
   width: 100%;
   background: rgb(255, 254, 248);
   margin-bottom: 10px;
+}
+.table_list_item_fixed .table_list_item_title {
+  background: rgb(255, 255, 255);
 }
 
 .table_list_item_title p {
@@ -93,6 +108,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 4px;
   height: 34px;
   border-radius: 5px 5px 0px 0px;
 }
@@ -168,8 +184,6 @@
   height: 8px; /* Высота горизонтальной прокрутки */
 }
 
-
-
 .table_list_item_active .table_list_item_title {
   background: linear-gradient(135deg, rgb(254, 224, 70), rgb(251, 196, 0) 100%);
 }
@@ -178,7 +192,68 @@
   color: rgb(37, 46, 53);
 }
 
-
 .table_items_list * {
   user-select: none;
+}
+
+@media only screen and (max-width: 850px) {
+  .tables_filters {
+    flex-direction: column-reverse;
+    height: auto;
+    background: transparent;
+    border: none;
+    gap: 20px;
+  }
+  .cazino_input {
+    box-sizing: border-box;
+    /* gray_4 */
+    border: 1px solid rgb(234, 236, 240);
+    border-radius: 5px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+  }
+  .tables_filters_list {
+    width: 100%;
+    overflow: auto;
+    gap: 6px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgb(234, 236, 240);
+  }
+  .tables_filters_list_btn {
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 12px;
+    color: rgb(37, 46, 53);
+    background: rgb(241, 243, 250);
+  }
+  .tables_filters_list_btn_active {
+    background: rgb(66, 71, 84);
+    color: rgb(255, 255, 255);
+  }
+  .table_list_item_fixed {
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .tables_filters_list {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .cazino_input {
+    width: calc(100% - 30px);
+  }
+  .table_items_list {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .tables_filters_list {
+    display: flex; /* Устанавливаем горизонтальное выравнивание */
+    flex-wrap: nowrap; /* Запрещаем перенос на следующую строку */
+  }
+  .tables_filters_list_btn {
+    white-space: nowrap; /* Запрещаем перенос текста внутри кнопок */
+  }
 }

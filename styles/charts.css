@@ -181,3 +181,19 @@
   cursor: pointer;width: 14px;
   height: 14px;
 }
+
+
+@media only screen and (max-width: 850px) {
+  .charts_list {
+    flex-direction: column;
+  }
+  .chart_card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .chart_card_title_filters, .chart_card {
+    border-radius: 0;
+  }
+}
