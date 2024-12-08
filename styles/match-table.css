@@ -433,6 +433,7 @@
     background: rgb(11, 41, 52);
     border: none;
     border-radius: 0;
+    position: relative;
   }
   .match_table {
     border-radius: 0;
@@ -440,8 +441,10 @@
 
   .match_results_list_stats {
     margin-top: -60px;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+
   }
-  .match_results_list_item {
-    width: 140px;
-  }
+
 }
