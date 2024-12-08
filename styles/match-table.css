@@ -441,4 +441,7 @@
   .match_results_list_stats {
     margin-top: -60px;
   }
+  .match_results_list_item {
+    width: 140px;
+  }
 }
