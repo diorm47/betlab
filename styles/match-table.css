@@ -447,4 +447,9 @@
 
   }
 
+  .match_results_top {
+    padding: 0;
+    justify-content: center;
+  }
+
 }
